@@ -41,7 +41,7 @@ window.onload=function(){
              },
              {
              	title:"其他",
-             	content:"了解后端Node.JS后端平台，以及Gulp和GitHub等前端自动化工具。</br>了解Ajax和跨域技术，以及Json协议。使用面向对象式重构HTML简历。</br>详情请参考：https://github.com/"
+             	content:"了解后端Node.JS后端平台，以及Gulp和GitHub等前端自动化工具。</br>了解Ajax和跨域技术，以及Json协议。使用面向对象式重构HTML简历。</br>详情请参考：http://github.com/pokerfacs/resume/tree/master"
              }
         ],
         // 工作经历
@@ -77,12 +77,12 @@ window.onload=function(){
         ],
         // 个人评价
         person_assess:[
-            "自学能力较强，一年半自学日语取得N2等级证书，三个月无基础自学前端语言。",
-             "积极上进，工作踏实，有责任感，耐压性好，乐于接受新事物，热爱编程的成就感和互联网行业的发展。",
-             "目前只熟悉前端知识，没有项目和实战经验，不熟悉后端语言，但这是学习的方向。"
+            "自学能力较强，一年半自学日语取得N2等级证书，</br>三个月无基础自学前端语言。",
+             "积极上进，工作踏实，有责任感，耐压性好，乐于接受新事物，</br>热爱编程的成就感和互联网行业的发展。",
+             "目前只熟悉前端知识，没有项目和实战经验，</br>不熟悉后端语言，但这是学习的方向。"
             ],
         contact:[
-            'https://github.com/',
+            'http://github.com/pokerfacs/</br>resume/tree/master',
             '17620892355',
             'scutpengf@163.com'
         ]
@@ -139,12 +139,12 @@ window.onload=function(){
 
         var personAssesse=document.getElementById('testimonial').getElementsByTagName("p");
         for(i=0;i< resume.person_assess.length;i++){
-                personAssesse[i].innerText=resume.person_assess[i];
+                personAssesse[i].innerHTML=resume.person_assess[i];
         };
 
         var contactMe=document.getElementById('contactMe').getElementsByTagName("p");
         for(i=0;i< resume.contact.length;i++){
-                contactMe[i].innerText =resume.contact[i];
+                contactMe[i].innerHTML =resume.contact[i];
         }     
 	})();
 
